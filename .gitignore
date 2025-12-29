@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs
+*.log
+
+# Build outputs
+dist/
+build/
+out/
+
+# Vite / React cache
+.vite/
+
+# Coverage reports
+coverage/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Optional: ignore lockfiles ONLY if you really want to
+# (generally you SHOULD commit lockfiles)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
