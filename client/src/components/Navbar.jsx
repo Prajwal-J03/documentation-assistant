@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import LightTheme from '../assets/lightTheme.svg'
 import DarkTheme from '../assets/darkTheme.svg'
 import Logo from '../assets/icon.png'
-import Menu from '../assets/menu.svg'
-import MenuLight from '../assets/menuLight.svg'
 
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
@@ -44,7 +42,14 @@ const Navbar = () => {
                 </div>
                 <div className='flex lg:hidden rounded-md relative'>
                     <button onClick={handleMenu} aria-label='Open Menu'>
-                        <img src={theme === 'dark' ? MenuLight : Menu} alt="Menu" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Menu--Streamline-Ionic-Filled" height="24" width="24">
+                            <desc>
+                                Menu Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <path stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2.25" d="M1.71 5.62975h20.58"></path>
+                            <path stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2.25" d="M1.71 12.00015h20.58"></path>
+                            <path stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="2.25" d="M1.71 18.37025h20.58"></path>
+                        </svg>
                     </button>
                     {menuOpen && <div className='w-72 absolute bg-white dark:bg-gray-950 border dark:border-white shadow-gray-500/50 dark:shadow-gray-50/50 top-12 right-0 shadow-lg rounded-md p-4 flex flex-col items-start gap-4'>
                         <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer mb-4' />
