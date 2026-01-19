@@ -32,7 +32,7 @@ const Navbar = () => {
                     <h1 className='text-2xl font-bold'>AI Legatrix</h1>
                 </div>
                 <div className='hidden lg:flex items-center justify-between gap-20 px-8 py-3 border dark:border-white rounded-full shadow-md shadow-gray-500/50 dark:shadow-gray-50/50'>
-                    <a href="#" className='px-4 py-1 rounded-full bg-blue-500'>Home</a>
+                    <a href="#" className='px-4 py-1 rounded-full bg-blue-500 text-white font-semibold'>Home</a>
                     <a href="#">About Us</a>
                     <a href="#">Pricing</a>
                 </div>
