@@ -12,6 +12,7 @@ const Pricing = () => {
                         <li>Max file size 20 MB.</li>
                         <li>Standard AI model.</li>
                     </ul>
+                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2'>Login In</button>
                 </div>
                 <div className='border rounded-2xl py-4 px-12 w-104 hover:shadow-md relative'>
                     <h4 className='text-lg font-bold text-center mb-4'>Basic <span className='bg-blue-500 text-base font-medium px-2 py-1 rounded-b-md absolute -top-1 right-5 shadow-md shadow-gray-400 text-white '>Most Popular</span></h4>
@@ -19,6 +20,7 @@ const Pricing = () => {
                         <li>Summarize PDFs upto 500 pages/day.</li>
                         <li>Max file size upto 1 GB.</li>
                     </ul>
+                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2'>Login In</button>
                 </div>
                 <div className='border rounded-2xl py-4 px-12 w-104 hover:shadow-md'>
                     <h4 className='text-lg font-bold text-center mb-4'>Professional</h4>
@@ -26,6 +28,7 @@ const Pricing = () => {
                         <li>Summarize PDFs upto 50,000 pages/day.</li>
                         <li>Max file size upto 25 GB.</li>
                     </ul>
+                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2'>Login In</button>
                 </div>
             </div>
         </div>
