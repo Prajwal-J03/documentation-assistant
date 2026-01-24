@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from './Pages/Navbar'
-import AboutUs from './Pages/AboutUs'
-import Pricing from './Pages/Pricing'
+import Navbar from './components/Navbar'
+import AboutUs from './pages/AboutUs'
+import Pricing from './pages/Pricing'
 
 const App = () => {
   return (
