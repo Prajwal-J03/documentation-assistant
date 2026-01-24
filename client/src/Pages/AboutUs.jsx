@@ -29,7 +29,7 @@ const teamMembers = [
 
 const AboutUs = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto mb-24'>
             <h2 className='text-center text-xl font-bold mb-8'>Meet The Team</h2>
             <div className=' flex lg:flex-row flex-col gap-y-8 items-center justify-around'>
                 {teamMembers.map(member =>
