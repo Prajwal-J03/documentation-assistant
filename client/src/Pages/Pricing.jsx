@@ -40,7 +40,7 @@ const Pricing = () => {
             </div>
             <div>
                 <h1 className='text-xl font-bold mb-8 text-center lg:text-start'>Not the plan your looking for?</h1>
-                <div className='w-84 lg:w-full mx-auto border rounded-2xl flex flex-col items-center justify-between py-16 mb-8'>
+                <div className='w-92 lg:w-full mx-auto border rounded-2xl flex flex-col items-center justify-between py-16 mb-8'>
                     <h4 className='text-lg font-bold mb-8'>Contact Support Team</h4>
                     <p className='w-80 lg:w-120 mb-2'><span className='text-xl text-red-600'>* </span>Name: </p>
                     <input type="text" name="name" id="name" className='border border-gray-400 h-12 w-80 lg:w-120 rounded-lg px-4 mb-4' required />
