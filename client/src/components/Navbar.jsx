@@ -55,8 +55,8 @@ const Navbar = () => {
                     <Link to='/' className='px-4 py-1 rounded-full bg-blue-500 text-white font-semibold'>
                         Home
                     </Link>
-                    <a href="#">Pricing</a>
-                    <a href="#">About Us</a>
+                    <Link to="/#pricing">Pricing</Link>
+                    <Link to="/#aboutus">About Us</Link>
                 </div>
                 <div className='hidden lg:flex items-center gap-8'>
                     <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer' />
@@ -78,9 +78,9 @@ const Navbar = () => {
                             ref={menuRef}
                             className='w-72 absolute bg-white dark:bg-gray-950 border dark:border-white shadow-gray-500/50 dark:shadow-gray-50/50 top-12 right-0 shadow-lg rounded-md p-4 flex flex-col items-start gap-4 z-[999]'>
                             <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer mb-4' />
-                            <a href="#" className='px-4 py-1 rounded-full bg-blue-500' onClick={() => setMenuOpen(false)}>Home</a>
-                            <a href="#" onClick={() => setMenuOpen(false)}>Pricing</a>
-                            <a href="#" onClick={() => setMenuOpen(false)}>About Us</a>
+                            <Link to='/' onClick={() => setMenuOpen(false)}>Home</Link>
+                            <Link to="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
+                            <Link to="/#aboutus" onClick={() => setMenuOpen(false)}>About Us</Link>
                             <div className='w-full flex justify-center mb-4'>
                                 <button className='bg-blue-500 px-8 py-2 rounded-md mt-8 hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</button>
                             </div>

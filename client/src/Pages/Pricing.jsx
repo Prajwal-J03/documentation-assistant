@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <div className='container mx-auto mb-20'>
+        <div className='container mx-auto mb-20' id='pricing'>
             <h1 className='text-xl font-bold text-center mb-8'>Pricing</h1>
             <div className='w-full mx-auto flex flex-col items-center justify-center gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-0 mb-16'>
                 <div className='border rounded-2xl py-4 px-12 w-84 lg:w-104 hover:shadow-md'>
