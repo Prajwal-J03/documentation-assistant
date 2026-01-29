@@ -76,7 +76,7 @@ const Navbar = () => {
                     {menuOpen &&
                         <div
                             ref={menuRef}
-                            className='w-72 absolute bg-white dark:bg-gray-950 border dark:border-white shadow-gray-500/50 dark:shadow-gray-50/50 top-12 right-0 shadow-lg rounded-md p-4 flex flex-col items-start gap-4 z-[999]'>
+                            className='w-72 absolute bg-white dark:bg-gray-900 border dark:border-white shadow-gray-500/50 dark:shadow-gray-50/50 top-12 right-0 shadow-lg rounded-md p-4 flex flex-col items-start gap-4 z-[999]'>
                             <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer mb-4' />
                             <Link to='/' onClick={() => setMenuOpen(false)}>Home</Link>
                             <Link to="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
