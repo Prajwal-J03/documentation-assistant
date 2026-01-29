@@ -20,7 +20,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+            if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.closest('#menu-button')) {
                 setMenuOpen(false)
             }
         }
@@ -63,7 +63,7 @@ const Navbar = () => {
                     <button className='bg-blue-500 px-8 py-2 rounded-md hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</button>
                 </div>
                 <div className='flex lg:hidden rounded-md relative'>
-                    <button onClick={handleMenu} aria-label='Open Menu'>
+                    <button id='menu-button' onClick={handleMenu} aria-label='Open Menu'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Menu--Streamline-Ionic-Filled" height="24" width="24">
                             <desc>
                                 Menu Streamline Icon: https://streamlinehq.com
