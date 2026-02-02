@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
                 <div className='hidden lg:flex items-center gap-8'>
                     <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer' />
-                    <button className='bg-blue-500 px-8 py-2 rounded-md hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</button>
+                    <Link to='/login' className='bg-blue-500 px-8 py-2 rounded-md hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</Link>
                 </div>
                 <div className='flex lg:hidden rounded-md relative'>
                     <button id='menu-button' onClick={handleMenu} aria-label='Open Menu'>
@@ -85,7 +85,7 @@ const Navbar = () => {
                             <Link to="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
                             <Link to="/#aboutus" onClick={() => setMenuOpen(false)}>About Us</Link>
                             <div className='w-full flex justify-center mb-4'>
-                                <button className='bg-blue-500 px-8 py-2 rounded-md mt-8 hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</button>
+                                <Link to='/login' className='bg-blue-500 px-8 py-2 rounded-md mt-8 hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</Link>
                             </div>
                         </div>}
                 </div>
