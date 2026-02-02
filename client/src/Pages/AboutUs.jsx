@@ -2,7 +2,7 @@ import React from 'react'
 import Rahul from '../assets/rahul.png'
 import Prajwal from '../assets/prajwal.png'
 import Kiran from '../assets/kiran.png'
-import Backgroud from './BackgroudDisc'
+import BackgroudDisc from './BackgroudDisc'
 
 const teamMembers = [
     {
@@ -35,7 +35,7 @@ const AboutUs = () => {
             <div className=' flex lg:flex-row flex-col gap-y-8 items-center justify-around'>
                 {teamMembers.map(member =>
                     <div key={member.id} className='border border-black dark:border-white hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 p-8 md:p-8 rounded-2xl relative'>
-                        <Backgroud />
+                        <BackgroudDisc />
                         <img src={member.img} alt={member.name} className='w-48 md:w-64 h-60 md:h-80' />
                         <p className='font-bold text-lg text-center my-4'>{member.name}</p>
                         <div className='flex items-center justify-around'>
