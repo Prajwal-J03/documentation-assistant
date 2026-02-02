@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
 import LightTheme from '../assets/lightTheme.svg'
 import DarkTheme from '../assets/darkTheme.svg'
-import Logo from '../assets/icon.png'
+import LogoLight from '../assets/icon_light.png'
+import LogoDark from '../assets/icon_dark.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
     const [menuOpen, setMenuOpen] = useState(false)
     const menuRef = useRef(null)
+
+    const iconType = theme === 'dark' ? LogoDark : LogoLight
 
     useEffect(() => {
         if (theme === 'dark') {
@@ -46,9 +49,9 @@ const Navbar = () => {
         <>
             <div className='container mx-auto p-6 flex items-center justify-between'>
                 <div className='flex items-center gap-2'>
-                    <img src={Logo} alt="AI Legatrix" className='w-8' />
+                    <img src={iconType} alt="AI Legatrix" className='w-8' />
                     <Link to='/'>
-                        <h1 className='text-2xl font-bold'>AI Legatrix</h1>
+                        <h1 className='text-2xl font-bold underline decoration-3 underline-offset-8'>AI Legatrix</h1>
                     </Link>
                 </div>
                 <div className='hidden lg:flex items-center justify-between gap-20 px-8 py-3 border dark:border-white rounded-full shadow-md shadow-gray-500/50 dark:shadow-gray-50/50'>
