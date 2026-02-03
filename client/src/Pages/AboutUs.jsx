@@ -40,7 +40,7 @@ const AboutUs = () => {
                 top: `${Math.random() * 60}%`,
                 left: `${Math.random() * 60}%`,
             })
-        }, 3000)
+        }, 2000)
 
         return () => clearInterval(interval)
     }, [])
