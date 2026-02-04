@@ -1,21 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Pricing = () => {
     return (
         <div className='container mx-auto mb-20' id='pricing'>
             <h1 className='text-xl font-bold text-center mb-8'>Pricing</h1>
             <div className='w-full mx-auto flex flex-col items-center justify-center gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-0 mb-16'>
-                <div className='border rounded-2xl py-4 px-12 w-92 lg:w-104 hover:shadow-md'>
+                <div className='border border-gray-300 dark:border-gray-400 rounded-2xl py-4 px-12 w-92 lg:w-104 hover:border-blue-500 hover:shadow-md'>
                     <h4 className='text-lg font-bold text-center mb-4'>Free</h4>
                     <ul className='list-disc'>
                         <li>Summarize PDFs upto 5 pages/day.</li>
                         <li>Max file size 20 MB.</li>
                         <li>Standard AI model.</li>
                         <li>Voice Support.</li>
+                        <li>With watermarks on PDFs generated.</li>
                     </ul>
-                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</button>
+                    <Link to='/login' className='bg-blue-500 text-white text-center font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</Link>
                 </div>
-                <div className='border rounded-2xl py-4 px-12 w-92 lg:w-104 hover:shadow-md relative'>
+                <div className='border border-gray-300 dark:border-gray-400 rounded-2xl py-4 px-12 w-92 lg:w-104 hover:border-blue-500 hover:shadow-md relative'>
                     <h4 className='text-lg font-bold text-center mb-4'>Basic <span className='bg-blue-500 text-base font-medium px-2 py-1 rounded-b-md absolute -top-1 right-5 shadow-md shadow-gray-400 text-white '>Most Popular</span></h4>
                     <ul className='list-disc'>
                         <li>Summarize PDFs upto 500 pages/day.</li>
@@ -23,10 +25,11 @@ const Pricing = () => {
                         <li>Access out Legatrix Max AI model.</li>
                         <li>Voice support + AI conversation.</li>
                         <li>Add multiple users (max 2).</li>
+                        <li>No watermarks on PDFs generated.</li>
                     </ul>
-                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</button>
+                    <Link to='/login' className='bg-blue-500 text-white text-center font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</Link>
                 </div>
-                <div className='border rounded-2xl py-4 px-12 w-92 lg:w-104 hover:shadow-md'>
+                <div className='border border-gray-300 dark:border-gray-400 rounded-2xl py-4 px-12 w-92 lg:w-104 hover:border-blue-500 hover:shadow-md'>
                     <h4 className='text-lg font-bold text-center mb-4'>Professional</h4>
                     <ul className='list-disc'>
                         <li>Summarize PDFs upto 50,000 pages/day.</li>
@@ -34,8 +37,9 @@ const Pricing = () => {
                         <li>Access out Legatrix Max AI model.</li>
                         <li>Voice support + AI conversation.</li>
                         <li>Add multiple users(max 15).</li>
+                        <li>No watermarks on PDFs generated.</li>
                     </ul>
-                    <button className='bg-blue-500 text-white font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</button>
+                    <Link to='/login' className='bg-blue-500 text-white text-center font-medium w-1/2 block mx-auto mt-8 mb-4 rounded-full py-2 cursor-pointer'>Login Now</Link>
                 </div>
             </div>
             <div>

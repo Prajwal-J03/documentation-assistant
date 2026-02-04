@@ -9,22 +9,22 @@ const teamMembers = [
         id: 1,
         name: 'Rahul M',
         img: Rahul,
-        github: 'github.com/Rahul-M',
-        linkedin: 'linkedin.com/rahul-m'
+        github: 'https://github.com/Rahul-M',
+        linkedin: 'https://linkedin.com/rahul-m'
     },
     {
         id: 2,
         name: 'Prajwal J',
         img: Prajwal,
-        github: 'github.com/Prajwal-J03',
-        linkedin: 'linkedin.com/in/prajwal-j-work'
+        github: 'https://github.com/Prajwal-J03',
+        linkedin: 'https://linkedin.com/in/prajwal-j-work'
     },
     {
         id: 3,
         name: 'Kiran Kumar L N',
         img: Kiran,
-        github: 'github.com/Rahul-M',
-        linkedin: 'linkedin.com/rahul-m'
+        github: 'https://github.com/Rahul-M',
+        linkedin: 'https://linkedin.com/rahul-m'
     }
 ]
 
@@ -40,7 +40,7 @@ const AboutUs = () => {
                 top: `${Math.random() * 60}%`,
                 left: `${Math.random() * 60}%`,
             })
-        }, 2000)
+        }, 3000)
 
         return () => clearInterval(interval)
     }, [])

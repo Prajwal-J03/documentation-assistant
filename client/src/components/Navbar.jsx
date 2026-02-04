@@ -37,6 +37,18 @@ const Navbar = () => {
         }
     }, [menuOpen])
 
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto'
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto'
+        }
+    }, [menuOpen])
+
     const handleTheme = () => {
         setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
     }
