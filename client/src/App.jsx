@@ -3,8 +3,7 @@ import SignUp from './pages/Signup'
 import Login from './pages/Login'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
-import Pricing from './pages/Pricing'
-import AboutUs from './pages/AboutUs'
+import EmailVerification from './pages/EmailVerification'
 
 const App = () => {
   const { hash } = useLocation()
@@ -21,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='/email-verification' element={<EmailVerification />} />
         <Route path='/login' element={<Login />} />
       </Routes>
     </>

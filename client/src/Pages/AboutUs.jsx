@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Rahul from '../assets/rahul.png'
 import Prajwal from '../assets/prajwal.png'
 import Kiran from '../assets/kiran.png'
-import BackgroudDisc from './BackgroudDisc'
+import BackgroudDisc from '../components/BackgroudDisc'
 
 const teamMembers = [
     {
