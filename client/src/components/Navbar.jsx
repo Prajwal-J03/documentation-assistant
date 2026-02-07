@@ -1,25 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import LightTheme from '../assets/lightTheme.svg'
 import DarkTheme from '../assets/darkTheme.svg'
 import LogoLight from '../assets/icon_light.png'
 import LogoDark from '../assets/icon_dark.png'
 import { Link } from 'react-router-dom'
+import ThemeContext from '../contexts/ThemeContext'
+
 
 const Navbar = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+    const { theme, toggleTheme } = useContext(ThemeContext)
     const [menuOpen, setMenuOpen] = useState(false)
     const menuRef = useRef(null)
 
     const iconType = theme === 'dark' ? LogoDark : LogoLight
-
-    useEffect(() => {
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-        localStorage.setItem('theme', theme)
-    }, [theme])
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -49,10 +42,6 @@ const Navbar = () => {
         }
     }, [menuOpen])
 
-    const handleTheme = () => {
-        setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
-    }
-
     const handleMenu = () => {
         setMenuOpen(prev => !prev)
     }
@@ -74,7 +63,7 @@ const Navbar = () => {
                     <Link to="/#aboutus">About Us</Link>
                 </div>
                 <div className='hidden lg:flex items-center gap-8'>
-                    <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer' />
+                    <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={toggleTheme} className='cursor-pointer' />
                     <Link to='/login' className='bg-blue-500 px-8 py-2 rounded-md hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 active:translate-y-1'>Login</Link>
                 </div>
                 <div className='flex lg:hidden rounded-md relative'>
@@ -92,7 +81,7 @@ const Navbar = () => {
                         <div
                             ref={menuRef}
                             className='w-72 absolute bg-white dark:bg-gray-900 border dark:border-white shadow-gray-500/50 dark:shadow-gray-50/50 top-12 right-0 shadow-lg rounded-md p-4 flex flex-col items-start gap-4 z-999'>
-                            <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={handleTheme} className='cursor-pointer mb-4' />
+                            <img src={theme === 'light' ? DarkTheme : LightTheme} alt="Toggle Theme" onClick={toggleTheme} className='cursor-pointer mb-4' />
                             <Link to='/' onClick={() => setMenuOpen(false)}>Home</Link>
                             <Link to="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
                             <Link to="/#aboutus" onClick={() => setMenuOpen(false)}>About Us</Link>

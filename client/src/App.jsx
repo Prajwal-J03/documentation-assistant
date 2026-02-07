@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import EmailVerification from './pages/EmailVerification'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 const App = () => {
   const { hash } = useLocation()
@@ -17,12 +18,14 @@ const App = () => {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/email-verification' element={<EmailVerification />} />
-        <Route path='/login' element={<Login />} />
-      </Routes>
+      <ThemeProvider>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/email-verification' element={<EmailVerification />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </ThemeProvider>
     </>
   )
 }
