@@ -1,9 +1,11 @@
 import React from 'react'
 import EmailVerificationImg from '../assets/email-verification.png'
+import BackgroudDisc from '../components/BackgroudDisc'
 
 const EmailVerification = () => {
     return (
-        <div className='container mx-auto h-screen flex items-center justify-center'>
+        <div className='container mx-auto h-screen flex items-center justify-center relative'>
+            <BackgroudDisc top='100px' left='50px'/>
             <div className='w-96 lg:w-200 flex flex-col items-center justify-around gap-10'>
                 <h2 className='text-4xl text-center font-bold text-blue-500'>Email Verification</h2>
                 <img src={EmailVerificationImg} alt="Email Verification" className='mx-auto' />
