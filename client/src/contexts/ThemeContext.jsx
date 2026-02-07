@@ -3,7 +3,7 @@ import React from 'react'
 
 const ThemeContext = createContext({
     theme: 'light',
-    setTheme: () => { }
+    toggleTheme: () => { }
 })
 
 export function ThemeProvider({ children }) {

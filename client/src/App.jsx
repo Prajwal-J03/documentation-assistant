@@ -5,6 +5,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import EmailVerification from './pages/EmailVerification'
 import { ThemeProvider } from './contexts/ThemeContext'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   const { hash } = useLocation()
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/email-verification' element={<EmailVerification />} />
           <Route path='/login' element={<Login />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </ThemeProvider>
     </>
