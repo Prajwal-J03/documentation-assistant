@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import EmailVerification from './pages/EmailVerification'
 import { ThemeProvider } from './contexts/ThemeContext'
 import NotFound from './pages/NotFound'
+import Chatbot from './pages/Chatbot'
 
 const App = () => {
   const { hash } = useLocation()
@@ -25,6 +26,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/email-verification' element={<EmailVerification />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/chatbot' element={<Chatbot />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ThemeProvider>

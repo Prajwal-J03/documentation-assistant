@@ -49,12 +49,10 @@ const Navbar = () => {
     return (
         <>
             <div className='container mx-auto p-6 flex items-center justify-between'>
-                <div className='flex items-center gap-2'>
+                <Link to='/' className='flex items-center gap-2'>
                     <img src={iconType} alt="AI Legatrix" className='w-8' />
-                    <Link to='/'>
-                        <h1 className='text-2xl font-bold underline decoration-3 underline-offset-8'>AI Legatrix</h1>
-                    </Link>
-                </div>
+                    <h1 className='text-2xl font-bold'>AI Legatrix</h1>
+                </Link>
                 <div className='hidden lg:flex items-center justify-between gap-20 px-8 py-3 border dark:border-white rounded-full shadow-md shadow-gray-500/50 dark:shadow-gray-50/50'>
                     <Link to='/' className='px-4 py-1 rounded-full bg-blue-500 text-white font-semibold'>
                         Home
