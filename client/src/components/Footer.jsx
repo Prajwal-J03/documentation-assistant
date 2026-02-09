@@ -13,17 +13,17 @@ const Footer = () => {
                 <p className='text-center font-semibold'>Stay connected with us: </p>
                 <div className='flex items-center justify-center gap-8 my-8'>
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="-1.285 -1.285 36 36" id="Instagram--Streamline-Core" height="36" width="36">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-1.285 -1.285 36 36" id="Instagram--Streamline-Core" height="36" width="36">
                             <desc>
                                 Instagram Streamline Icon: https://streamlinehq.com
                             </desc>
                             <g id="instagram">
                                 <g id="Group 4546">
-                                    <path id="Vector" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" d="M24.67420542857143 8.701446942857142c-0.3297630714285714 0 -0.5969642857142857 -0.26727285 -0.5969642857142857 -0.5969642857142857s0.2672012142857143 -0.5969642857142857 0.5969642857142857 -0.5969642857142857" strokeWidth="2.57"></path>
-                                    <path id="Vector_2" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" d="M24.67420542857143 8.701446942857142c0.3297630714285714 0 0.5969642857142857 -0.26727285 0.5969642857142857 -0.5969642857142857s-0.2672012142857143 -0.5969642857142857 -0.5969642857142857 -0.5969642857142857" strokeWidth="2.57"></path>
+                                    <path id="Vector" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M24.67420542857143 8.701446942857142c-0.3297630714285714 0 -0.5969642857142857 -0.26727285 -0.5969642857142857 -0.5969642857142857s0.2672012142857143 -0.5969642857142857 0.5969642857142857 -0.5969642857142857" strokeWidth="2.57"></path>
+                                    <path id="Vector_2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M24.67420542857143 8.701446942857142c0.3297630714285714 0 0.5969642857142857 -0.26727285 0.5969642857142857 -0.5969642857142857s-0.2672012142857143 -0.5969642857142857 -0.5969642857142857 -0.5969642857142857" strokeWidth="2.57"></path>
                                 </g>
-                                <path id="Rectangle 2" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" d="M2.0494404771428574 8.19371687857143c0 -3.393216635714286 2.7507493442857145 -6.143985082857142 6.143989858571429 -6.143985082857142h16.384066878571428c3.393145 0 6.143956428571428 2.7507684471428573 6.143956428571428 6.143985082857142v16.384019121428572c0 3.393145 -2.7508114285714282 6.143956428571428 -6.143956428571428 6.143956428571428H8.193430335714286c-3.3932405142857145 0 -6.143989858571429 -2.7508114285714282 -6.143989858571429 -6.143956428571428V8.19371687857143Z" strokeWidth="2.57"></path>
-                                <path id="Ellipse 11" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" d="M10.29644 16.385475714285715a6.089035714285714 6.089035714285714 0 1 0 12.178071428571428 0 6.089035714285714 6.089035714285714 0 1 0 -12.178071428571428 0" strokeWidth="2.57"></path>
+                                <path id="Rectangle 2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M2.0494404771428574 8.19371687857143c0 -3.393216635714286 2.7507493442857145 -6.143985082857142 6.143989858571429 -6.143985082857142h16.384066878571428c3.393145 0 6.143956428571428 2.7507684471428573 6.143956428571428 6.143985082857142v16.384019121428572c0 3.393145 -2.7508114285714282 6.143956428571428 -6.143956428571428 6.143956428571428H8.193430335714286c-3.3932405142857145 0 -6.143989858571429 -2.7508114285714282 -6.143989858571429 -6.143956428571428V8.19371687857143Z" strokeWidth="2.57"></path>
+                                <path id="Ellipse 11" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M10.29644 16.385475714285715a6.089035714285714 6.089035714285714 0 1 0 12.178071428571428 0 6.089035714285714 6.089035714285714 0 1 0 -12.178071428571428 0" strokeWidth="2.57"></path>
                             </g>
                         </svg>
                     </a>
@@ -37,7 +37,7 @@ const Footer = () => {
                         </svg>
                     </a>
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="-1.285 -1.285 36 36" id="Linkedin--Streamline-Core" height="36" width="36">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-1.285 -1.285 36 36" id="Linkedin--Streamline-Core" height="36" width="36">
                             <desc>
                                 Linkedin Streamline Icon: https://streamlinehq.com
                             </desc>

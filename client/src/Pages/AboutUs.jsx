@@ -50,7 +50,7 @@ const AboutUs = () => {
             <h2 className='text-center text-xl font-bold mb-8'>Meet The Team</h2>
             <div className=' flex lg:flex-row flex-col gap-y-8 items-center justify-around'>
                 {teamMembers.map(member =>
-                    <div key={member.id} className='border border-black dark:border-white hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 p-8 md:p-8 rounded-2xl relative'>
+                    <div key={member.id} className='outline-2 outline-gray-300 hover:outline-blue-500 hover:shadow-md shadow-gray-500/50 dark:shadow-gray-50/50 p-8 md:p-8 rounded-2xl relative'>
                         <BackgroudDisc top={position.top} left={position.left} />
                         <img src={member.img} alt={member.name} className='w-48 md:w-64 h-60 md:h-80' />
                         <p className='font-bold text-lg text-center my-4'>{member.name}</p>
