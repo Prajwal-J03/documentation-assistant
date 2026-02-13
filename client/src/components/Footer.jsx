@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div className='container mx-auto p-8 border-t border-gray-300'>
             <div className='w-full mx-auto flex flex-col lg:flex-row items-center justify-center gap-4'>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Contact</a>
-                <a href="#">Company</a>
+                <Link to="/terms-of-service">Terms of Service</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/contact-us">Contact Us</Link>
+                <Link to="/company">Company</Link>
             </div>
             <div className='w-full mt-8'>
                 <p className='text-center font-semibold'>Stay connected with us: </p>
